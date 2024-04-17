@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Geral</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .content{
+            font-size: 17px;  
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+            gap: 20px; /* Espaçamento entre as colunas */
+            padding: 20px 0 20px 150px;
+        }
+        input, textarea{
+            border: solid black 1px;
+            border-radius: 3px;
+        }
+
+        iframe{
+            padding: 10px 0 0 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="img/contato.png" alt="Imagem do cabeçária da clínica médica">
+            </div>
+    
+            <div class="content">
+                <!-- Aqui vai o seu conteúdo -->
+                <div class="item">
+                    <address> 
+                        Telefone: (00) 1234-5678 <br>
+                        Whatsapp: (00) 1234-5678 <br>
+                        Rua das Flores, 123 <br>
+                        Cidade Feliz, Estado Alegre <br>
+                        CEP: 12345-678 <br>
+                    </address>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31850.716211088744!2d-38.553750856549954!3d-3.735984374504494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74900be39521d%3A0x7a383a0f2c6d3fe5!2zQ2zDrW5pY2EgTcOpZGljYXM!5e0!3m2!1spt-BR!2sbr!4v1713288001453!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <div class="item">
+                    <form method="post">
+                        <label for="nome"> Nome </label> <br>
+                        <input type="text" name="nome"> <br>
+                        <label for="email"> Email </label> <br>
+                        <input type="email" name="email" id="email"> <br>
+                        <label for="assunto"> Assunto </label> <br>
+                        <input type="text" name="assunto" id="assunto"> <br>
+                        <label for="mensagem"> Mensagem </label> <br>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea> <br>
+                        <input type="submit" value="Enviar"> 
+                        <input type="reset" value="Limpar">
+
+                    </form>
+                </div>
+                
+            </div>
+    
+            <div class="footer">
+                <!-- Aqui vai o seu rodapé -->
+                <strong>
+                    <p>Clínica Geral</p>
+                </strong>
+
+                <br>
+
+                <address> 
+                    Rua das Flores, 123 <br>
+                    Cidade Feliz, Estado Alegre <br>
+                    CEP: 12345-678 <br>
+
+                    <br>
+
+                    Telefone: (00) 1234-5678 <br>
+                    Email: <a href="contato@clinicageral.com"> contato@clinicageral.com </a>
+                </address>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
